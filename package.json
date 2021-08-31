@@ -1,0 +1,16 @@
+{
+  "name": "mihome-control",
+  "version": "1.0.0",
+  "description": "Interface to control my Xiaomi IoT stuff",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Hoxton",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-yeelight-wifi": "^0.1.4"
+  }
+
+}

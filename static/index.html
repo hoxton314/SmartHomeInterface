@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/jq.js"></script>
+    <script src="./scripts/buttons.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>SmartMenu</title>
+</head>
+
+<body>
+    <div id="buttonMenu" class="buttonContainer">
+        <div>
+            <button class="buttons" id="buttonRefresh">Refresh</button>
+        </div>
+        <div>
+            <button class="buttons" id="buttonOnOff">ON/OFF</button>
+        </div>
+        <div>
+            <button class="buttons" id="buttonColor">Change Color</button>
+            <input type="color" class="color" id="colorpicker" value="#e66465">
+        </div>
+        <div>
+            <button class="buttons" id="buttonBright">Change Brightness</button>
+            <input type="range" id="brightpicker" min="0" max="100" step="1">
+            <div id="brightpickerValue"></div>
+        </div>
+        <div>
+            <button class="buttons" id="buttonCT">Change Color Temp</button>
+            <input type="range" id="CTpicker" min="1700" max="6500" step="1">
+            <div id="CTpickerValue"></div>
+        </div>
+        <div id="HSB">
+            <button class="buttons" id="buttonHSB">Change HSB</button>
+            <label for="Hpicker">H: <div id="HpickerValue"></div></label>
+            <input type="range" id="Hpicker" name="Hpicker" min="0" max="100" step="1">
+            <label for="Spicker">S: <div id="SpickerValue"></div></label>
+            <input type="range" id="Spicker" name="Spicker" min="0" max="100" step="1">
+            <label for="Bpicker">B: <div id="BpickerValue"></div></label>
+            <input type="range" id="Bpicker" name="Bpicker" min="0" max="100" step="1">
+        </div>
+        <div>
+            <button class="buttons" id="buttonPreset">Select Preset</button>
+            <select id="presetpicker">
+                <option value="default">Default</option>
+                <option value="night">Night</option>
+            </select> 
+        </div>
+    </div>
+    <div id="stateInfo">
+        <div id="power">power:</div>
+        <div id="type">type:</div>
+        <div id="bright">bright:</div>
+        <div id="rgb">rgb:</div>
+        <div id="hsb">hsb:</div>
+    </div>
+</body>
+
+</html>
