@@ -10,9 +10,11 @@ $(document).ready(function () {
 
             console.log(data)
             if (data.power) {
-                $('#buttonOnOff').css('background-color', 'lightgray')
+                $('#buttonOnOff').css('background-color', '#E5383B')
+                $('#buttonOnOff').css('border', '20px solid #a4161a')
             } else {
-                $('#buttonOnOff').css('background-color', '#161616')
+                $('#buttonOnOff').css('background-color', '#660708')
+                $('#buttonOnOff').css('border', '20px solid #a4161a')
             }
 
             $('#colorpicker').val(rgbToHex(data.rgb.r, data.rgb.g, data.rgb.b))
